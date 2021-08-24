@@ -24,7 +24,9 @@ app.use(`/api`, require('./routes/user.routes'));
 ////CLOUDINARY
 app.use(`/api`, require('./routes/upload.routes'));
 ////CATEGORY
-app.use(`/cat`, require('./routes/category.routes'));
+app.use(`/api`, require('./routes/category.routes'));
+////MENUS
+app.use(`/api`, require('./routes/menu.routes'));
 
 
 app.listen(PORT, ()=>{

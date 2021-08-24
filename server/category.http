@@ -1,28 +1,21 @@
 ### GET CATEGORY
-GET http://localhost:8000/cat/category
+GET http://localhost:8000/api/category
 
 ### CREATE CATEGORY
-POST http://localhost:8000/cat/category/create
+POST http://localhost:8000/api/category/create
 Content-Type: application/json
 
 {
-    "category": "Postre",
-    "email": "stefano@gmail.com"
+    "category": "Cafeteria"
 }
 
 ### UPDATE CATEGORY
-PUT http://localhost:8000/cat/category/update/612406f0d518518f90836f8b
+PUT http://localhost:8000/api/category/update/612482b815423a6dec52c925
 Content-Type: application/json
 
 {
-    "category": "Ensalada",
-     "email": "admin@gmail.com"
+    "category": "Fondos"
 }
 
 ### DELETE CATEGORY
-DELETE http://localhost:8000/cat/category/delete/6124358f9057b77d6c6201da
-Content-Type: application/json
-
-{
-     "email": "admin@gmail.com"
-}
+DELETE http://localhost:8000/api/category/delete/612482f4de619761002e673e

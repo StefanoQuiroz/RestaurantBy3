@@ -10,12 +10,6 @@ const findCategory = (req, res) => {
 }
 
 const createCategory = async (req, res) => {
-   /*  try{
-        res.json("Todo OK")
-    } catch(error) {
-       return res.status(500).json({message:"algo salio mal de createCategory"}) 
-    } */
-    //Caro console log res.locals.isAdmin
     //console.log("isAdmin", res.locals)
     Category.findOne({category: req.body.category})
         .then( result => {

@@ -70,7 +70,8 @@ const login = (req, res) => {
                                 firstName: result.firstName,
                                 lastName: result.lastName,
                                 email: result.email,
-                                rol: result.rol
+                                rol: result.rol,
+                                cart: result.cart
                             }
                             const token = jwt.sign(payload, secretKey);
                             res.cookie("usertoken", token, secretKey, {httpOnly: true})

@@ -40,8 +40,13 @@ Content-Type: application/json
     "email" : "stefano@gmail.com",
     "password": "stefano"
 }
+###LOGIN
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "email" : "admin@gmail.com",
+    "password": "12345"
+}
 ###lOGOUT
 GET http://localhost:8000/api/logout
-#####################################################################################################
-###PRODUCTS ACTIONS
-#####################################################################################################

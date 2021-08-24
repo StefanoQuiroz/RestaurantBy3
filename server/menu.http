@@ -1,0 +1,40 @@
+###GET ALL MENUS
+GET http://localhost:8000/api/menu
+
+###GET A SINGE MENU
+GET http://localhost:8000/api/menu/61250d37fd69b7071c5ca7d0
+
+###CREATE A NEW MENU
+POST http://localhost:8000/api/menu/new
+Content-Type: application/json
+
+{
+    "name" : "Suspiro a la limeña",
+    "description" : "Suspiro",
+    "category" : "Postre", 
+    "price" : 3.99,
+    //image tiene un object que es el objeto public_id y url cuando añadimos una imagen a cloudinary
+    "image" : {
+        "public_id": "test/ttu1nexbh0bs6tg7tmh4",
+        "url": "http://res.cloudinary.com/dsuchg5dl/image/upload/v1629812842/test/ttu1nexbh0bs6tg7tmh4.jpg"
+    }
+}
+
+###UPDATE A MENU
+PUT http://localhost:8000/api/menu/update/61250d37fd69b7071c5ca7d0
+Content-Type: application/json
+
+{
+    "name" : "Arroz con Leche",
+    "description" : "Arroz dulce con leche condensada --moficado",
+    "category" : "Postre", 
+    "price" : 3.99,
+    //image tiene un object que es el objeto public_id y url cuando añadimos una imagen a cloudinary
+    "image" : {
+        "public_id": "test/fr9robsf9hobo6ukwes5",
+        "url": "https://res.cloudinary.com/dsuchg5dl/image/upload/v1629819066/test/fr9robsf9hobo6ukwes5.jpg"
+    }
+}
+
+###DELETE A MENU
+DELETE http://localhost:8000/api/menu/delete/61250f81fd69b7071c5ca7d7
