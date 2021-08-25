@@ -5,10 +5,10 @@ const router = express();
 
 
 router.get("/users", authenticate, findUser);
-router.get("/user/:id", authenticate, findSingleUser);
-router.post("/user/new", createUser);
-router.put("/user/update/:id", authenticate, updateUser);
-router.delete("/user/delete/:id", authenticate, deleteUser);
+router.get("/users/:id", authenticate, findSingleUser);
+router.post("/users/new", createUser);
+router.put("/users/update/:id", authenticate, updateUser);
+router.delete("/users/delete/:id", authenticate, deleteUser);
 
 router.post("/login", login);
 router.get("/logout", authenticate, logOut);
