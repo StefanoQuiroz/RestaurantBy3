@@ -45,6 +45,7 @@ const Login = () => {
             });
         }
     //console.log("Es admin ?", isAdmin);
+    //cambie algo
     const {email, password} = user;
     return (
         <Container  style={{border:'2px solid black', marginTop:'1.5rem', backgroundColor:'white'}}>
